@@ -70,7 +70,7 @@ The system provides a user-friendly interface and robust backend to ensure a sea
 ## 🔗 Future Enhancements
 1. Add Admin Panel for managing courses and student enrollments.
 2. Integrate Email Notifications for registration confirmation.
-3 .Enhance UI with frameworks like React.js or Bootstrap.
+3. Enhance UI with frameworks like React.js or Bootstrap.
 
 
 Crafted with ❤️ using Node.js, SQL, and a passion for learning. 🚀
