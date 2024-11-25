@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        body {
+            display: flex;
+
+            height: 100vh;
+            margin: 0;
+            background-color: #212121;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            padding: 40px;
+            background-color: #2c2c2c;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            max-width: 90%;
+            width: 600px;
+        }
+
+        h1, h2 {
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+
+        input {
+            padding: 10px;
+            width: 50%;
+            height: 40px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border 0.3s ease;
+        }
+
+        input:focus {
+            border: 2px solid greenyellow;
+            outline: none;
+        }
+
+        input:hover {
+            border: 2px solid greenyellow;
+        }
+
+        button {
+            padding: 15px;
+            width: 50%;
+            border: none;
+            border-radius: 5px;
+            background-color: #187e64;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #13955b;
+            transform: scale(1.05);
+        }
+
+        button:focus {
+            outline: 2px solid greenyellow;
+        }
+
+        @media (max-width: 500px) {
+            form {
+                padding: 20px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="/logincheck" method="post">
+        <h1>Welcome to Student Database</h1>
+        <h2>Please Enter Your Credentials</h2>
+        <br>
+
+        <input type="text" id="studentid" name="studentid" placeholder="Student Id" required>
+        <br>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <br>
+        <button type="submit" id="login">Login</button>
+        <br>
+        <a href="/register">Don't have an account? Register here</a>
+    </form>
+</body>
+</html>
